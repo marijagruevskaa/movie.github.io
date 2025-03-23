@@ -1,8 +1,4 @@
 let header_title = document
-
-
-
-
 function filterMovies(genre) {
     const topPicksSection = document.getElementByld('top-picks');
     let filteredMovies;
@@ -19,4 +15,13 @@ function filterMovies(genre) {
     const movieList = filteredMovies.map(movie => `<li><a href="#">${movie}</a></li>`).join('');
     topPicksSection.innerHTML = `<h3>Top picks for you: (${genre})</h3><ul>${movieList}</ul>`; 
     }
+}
+function displayTopPicks() {
+    const topPicksSection = document.getElementByld('top-picks');
+
+    const movies = [
+        { title: 'Wicked(2024)', image: 'image.png'},
+        {title: 'Interstellar(2014)', image:'image 1.png'},
+        {title: 'Little Women(2015)', image:'image 2.png'}
+    ];
 }
